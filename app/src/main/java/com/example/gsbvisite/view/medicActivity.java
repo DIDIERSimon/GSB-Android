@@ -2,17 +2,17 @@ package com.example.gsbvisite.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.gsbvisite.R;
+import com.example.gsbvisite.controller.MedicamentController;
 
 public class medicActivity extends AppCompatActivity {
 
     ListView lvMedicaments;
+    MedicamentController medicamentController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -23,12 +23,14 @@ public class medicActivity extends AppCompatActivity {
 
         lvMedicaments.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listeStrings));
 
+        this.medicamentController = MedicamentController.getInstance();
+
         callManager();
     }
 
     private void callManager(){
         //callback button
-         findViewById(R.id.back_btn).setOnClickListener(v -> {
+         findViewById(R.id.callBack_Btn).setOnClickListener(v -> {
             Intent intent = new Intent(medicActivity.this, GSBVisite.class);
             startActivity(intent);
         });

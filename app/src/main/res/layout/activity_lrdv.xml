@@ -21,7 +21,7 @@
             <ImageButton
                     android:layout_width="74dp"
                     android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test"
-                    android:id="@+id/imageButton" tools:ignore="PrivateResource"/>
+                    android:id="@+id/callBack_Btn" tools:ignore="PrivateResource"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="vertical"
