@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/Header">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/liste_des_medicaments"
+                android:ems="10"
+                android:id="@+id/ContentName"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="509dp" android:layout_weight="1">
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="395dp" android:id="@+id/listMedicaments">
+            </ListView>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="217dp" android:layout_weight="1">
+                <ImageButton
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test"
+                        android:id="@+id/back_btn" tools:ignore="PrivateResource"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
