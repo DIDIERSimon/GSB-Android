@@ -1,4 +1,4 @@
-package com.example.gsbvisite;
+package com.example.gsbvisitevrai;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -20,6 +20,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.gsbvisite", appContext.getPackageName());
+        assertEquals("com.example.gsbvisitevrai", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.gsbvisite;
+package com.example.gsbvisitevrai;
 
 import org.junit.Test;
 
